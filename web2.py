@@ -63,7 +63,7 @@ warnings.filterwarnings('ignore')
 # for importing model through
 import requests
 
-model_url = "https://drive.google.com/file/d/19bC0Hqc58HAjqXRc0P-qIp4sv3LKXp88/view?usp=drive_link"
+model_url = "https://drive.google.com/uc?export=download&id=19bC0Hqc58HAjqXRc0P-qIp4sv3LKXp88"
 response = requests.get(model_url)
 with open("model_test_whole_2may.pth", "wb") as file:
     file.write(response.content)
