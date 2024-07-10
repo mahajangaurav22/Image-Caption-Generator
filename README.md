@@ -19,7 +19,7 @@ https://drive.google.com/file/d/19bC0Hqc58HAjqXRc0P-qIp4sv3LKXp88/view?usp=drive
 The goal of this project is to develop an image captioning system that can automatically generate descriptive captions for uploaded images. The system uses a model that combines a Vision Transformer (ViT) as the encoder to process the image and a GPT-2 based decoder to generate the captions.
 <br>
 <br>
-<img width="577" alt="Screenshot 2024-07-10 at 14.55.21" src="[https://github.com/mahajangaurav22/Flappy-Bird/assets/77409117/d4fa987b-7ef4-4846-8452-16b501f12e20](https://github.com/mahajangaurav22/Image-Caption-Generator/blob/main/Screenshot%202024-07-10%20at%2014.55.21.png)">
+<img width="577" alt="Screenshot 2024-07-10 at 14.55.21" src="https://github.com/mahajangaurav22/Flappy-Bird/assets/77409117/d4fa987b-7ef4-4846-8452-16b501f12e20](https://github.com/mahajangaurav22/Image-Caption-Generator/blob/main/Screenshot%202024-07-10%20at%2014.55.21.png)">
 
 
 ## Installation
