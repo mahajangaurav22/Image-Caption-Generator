@@ -15,7 +15,7 @@ st.sidebar.write("## Upload and download :gear:")
 
 
 
-MAX_FILE_SIZE = 5 * 1024 * 1024  # 5MB
+MAX_FILE_SIZE = 5 * 1024 * 1024  
 col1, col2 = st.columns(2)
 my_upload = st.sidebar.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
 
@@ -39,9 +39,7 @@ import torch
 import numpy as np
 from PIL import Image
 import pickle
-# from torchvision import transforms
-# from datasets import load_dataset
-# import torch.nn as nn
+
 import matplotlib.pyplot as plt
 import os
 from tqdm import tqdm
@@ -50,32 +48,20 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
-#model_raw = VisionEncoderDecoderModel.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
-
-#for google collab use this code
-# model_raw = torch.load('/content/model_test_whole.pth')
 
 #for local machine running use this
-# model_raw = torch.load('/Users/gauravmahajan/Downloads/model_test_whole_2may.pth')
-# model_raw.eval()
-
-
-# for importing model through
-import requests
-
-model_url = "https://drive.google.com/uc?export=download&id=19bC0Hqc58HAjqXRc0P-qIp4sv3LKXp88"
-response = requests.get(model_url)
-with open("model_test_whole_2may.pth", "wb") as file:
-    file.write(response.content)
-
-model_raw = torch.load("model_test_whole_2may.pth")
+model_raw = torch.load('/Users/gauravmahajan/Downloads/model_test_whole_2may.pth')
+model_raw.eval()
 
 
 
 
 
 
-#model_raw.load_state_dict(torch.load('/content/model_trained.pth'))
+
+
+
+
 image_processor = ViTImageProcessor.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
 tokenizer       = GPT2TokenizerFast.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
 
